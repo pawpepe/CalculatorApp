@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

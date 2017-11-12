@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/pawpepe/.android/build-cache/8a0ed997636c5b3f690f5bf08a32541170fb44b8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d3ec51345384d9f8d4be04f5a7aefd46f0753f9b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d73b5507a447f5cdd253728ba6b58bf0424aab22/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/pawpepe/.android/build-cache/11e206f921f2aa0d0cd3c13002f3baed80c71bbd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0b2e75327190e5687040d6c517235ea3db71c103/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0bb5564f3f7283d41119728a31b87b92e4343ba2/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d89cceb6d4c82ef79c38221ba8ef957c2185bd08/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/81cd4b9b48673912ac698c59d881bfb2bdd7271a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/pawpepe/.android/build-cache/13db9dfc100a638c4773a4e151d3ed8a86f99147/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.pawpepe.calculator.MainActivity
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/pawpepe/.android/build-cache/8a0ed997636c5b3f690f5bf08a32541170fb44b8/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d3ec51345384d9f8d4be04f5a7aefd46f0753f9b/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d73b5507a447f5cdd253728ba6b58bf0424aab22/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/pawpepe/.android/build-cache/11e206f921f2aa0d0cd3c13002f3baed80c71bbd/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0b2e75327190e5687040d6c517235ea3db71c103/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0bb5564f3f7283d41119728a31b87b92e4343ba2/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d89cceb6d4c82ef79c38221ba8ef957c2185bd08/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/81cd4b9b48673912ac698c59d881bfb2bdd7271a/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/pawpepe/.android/build-cache/13db9dfc100a638c4773a4e151d3ed8a86f99147/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pawpepe/Calculator/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/pawpepe/.android/build-cache/8a0ed997636c5b3f690f5bf08a32541170fb44b8/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d3ec51345384d9f8d4be04f5a7aefd46f0753f9b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d73b5507a447f5cdd253728ba6b58bf0424aab22/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/pawpepe/.android/build-cache/11e206f921f2aa0d0cd3c13002f3baed80c71bbd/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0b2e75327190e5687040d6c517235ea3db71c103/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/0bb5564f3f7283d41119728a31b87b92e4343ba2/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/pawpepe/.android/build-cache/d89cceb6d4c82ef79c38221ba8ef957c2185bd08/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/pawpepe/.android/build-cache/81cd4b9b48673912ac698c59d881bfb2bdd7271a/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/AndroidManifest.xml:26:9-47

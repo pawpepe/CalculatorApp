@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]
