@@ -61,10 +61,6 @@ public class MainActivity extends AppCompatActivity {
         bsqr = (Button) findViewById(R.id.sqr);
         blog = (Button) findViewById(R.id.log);
 
-
-        //disable power Button
-        bpow.setEnabled(false);
-
     }
 
 
@@ -369,7 +365,8 @@ public class MainActivity extends AppCompatActivity {
         number =  number *sign;
         st.push(number);
         numberIn = "";
-
+        //tryin
+        number = 0;
     }
 
     //For the operand buttons check if the las char of the "display" is an operando or number

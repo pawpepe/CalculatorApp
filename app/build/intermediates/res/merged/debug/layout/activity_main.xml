@@ -138,7 +138,7 @@
                 android:id="@+id/ac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_orange_dark"
+                android:backgroundTint="@android:color/holo_red_light"
                 android:text="AC" />
         </TableRow>
 
