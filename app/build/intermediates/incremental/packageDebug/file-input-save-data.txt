@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 15 16:05:18 EST 2017
+#Wed Nov 15 16:11:23 EST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/pawpepe/Calculator/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png

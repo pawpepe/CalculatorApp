@@ -28,15 +28,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        init();
-        Calculatorlisteners();
+        //Setting buttons to their UI id
+        initButtonId();
+        //adding listeners and action to the buttons
+        buttonsListeners();
 
     }
 
 
 
-    private void init(){
+    private void initButtonId(){
 
         disp = (TextView)  findViewById(R.id.disp);
         bac = (Button) findViewById(R.id.ac);
@@ -64,25 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // Guarantee that:
-
-    // Cannot input zero if there is no number previously
-    // Cannot have a dot on a number if one already exists
-    // Cannot input number next to the result, guarantee that there is a operand before or it is the first number to be input
-
-
-    //Improve:
-    // It is accepting + . + or +++ or ---- or
-
-    //Possible Solution:
-    // 1.Check the last char of the string "display"
-    // 2. Once an operand button has been clicked it disable all the other operands and dot( +,-, /, *,.)
-    // 2.1 Once a number has been clicked it enables again the operands buttons and the dot button (+,/,*,)
-
-
-
-
-    private void Calculatorlisteners(){
+    private void buttonsListeners(){
         bac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -272,10 +255,11 @@ public class MainActivity extends AppCompatActivity {
                     display = Double.toString(result);
                     disp.setText(display);
 
-                    // saving the result on the var 'numberIn', will stack the result and allow for more operations to be made on top of it
+                    // saving the result(display) on the var 'numberIn' guarantees ir will be add to the stack for future operations
                     numberIn = display;
-                    result = 0;
                     disableButtons();
+                    result=0;
+
                 }
             }
         });
@@ -328,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Adding operation values to the stack
     void addStack() {
         if(numberIn.compareTo("") != 0) {
             try {
@@ -364,18 +349,21 @@ public class MainActivity extends AppCompatActivity {
 
         number =  number *sign;
         st.push(number);
-        numberIn = "";
+        numberIn = " ";
         //tryin
         number = 0;
     }
 
-    //For the operand buttons check if the las char of the "display" is an operando or number
+    //For the operand buttons check if the last char of the "display" is an operand or a number
     Boolean checkLastChar(String s){
 
         return true;
 
        // return false;
     }
+
+
+    //Function to disable all numbers and operations that the attributes comes after
     void disableButtons(){
         b0.setEnabled(false);
         b1.setEnabled(false);
@@ -394,7 +382,7 @@ public class MainActivity extends AppCompatActivity {
         beq.setEnabled(false);
 
     }
-
+    
     void enableButtons(){
         b0.setEnabled(true);
         b1.setEnabled(true);
@@ -428,4 +416,28 @@ public class MainActivity extends AppCompatActivity {
         beq.setEnabled(true);
         bsqr.setEnabled(true);
     }
+
+
+    // Guarantee that:
+
+    // Cannot input zero if there is no number previously
+        //Ex: 02 + 4,  looks better if it's 2 + 4 , design call. Works the same either way
+    // Cannot have a dot on a number if one already exists a dot
+        //Ex: 1.0.1
+    // Cannot input more numbers right after the result, guarantee that there is a operand (+,-,*,/) right after
+        // Ex:  result: 50.0  Dont allow: 50.023 typing more numbers should be blocked. Allowed cases: 50.0 + 23 or 50.0 / 23
+    // Don't allow division by zero or let it be "Infinity"
+    //
+
+
+    //Improve:
+    // It is accepting + . + or +++ or ---- or
+
+    //Possible Solution:
+    // 1.Check the last char of the string "display"
+    // 2. Once an operand button has been clicked it disables all the other operands and dot( +,-, /, *,.)
+        // 2.1 Once a number has been clicked it enables again the operands buttons and the dot button (+,/,*,)
+
+
+
 }
