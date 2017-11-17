@@ -1,19 +1,19 @@
 [
     {
-        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
         "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
-        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png",
         "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
@@ -56,12 +56,12 @@
         "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
-        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
-    },
-    {
         "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_black_48dp.png",
         "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "source": "/home/pawpepe/.android/build-cache/f0629e57c964d62adfdee74ca0a7863cfa5e976d/output/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/home/pawpepe/Calculator/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",

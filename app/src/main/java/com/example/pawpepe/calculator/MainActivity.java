@@ -2,6 +2,7 @@ package com.example.pawpepe.calculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     String a = null;
     Stack<Double> st = new Stack<Double>();
     int sign = 1;
-    int flag = 0;// flag == 1 multiplication, flag==2 division, flag=3 fat, flag=4 square root, flag=5 log
+    int flag = 0;// flag == 1 multiplication, flag==2 division, flag==3 power, flag==4 square root, flag==5 log
     String numberIn ="";
     String aux="";
     double number, auxNum, result;
@@ -59,7 +60,11 @@ public class MainActivity extends AppCompatActivity {
         beq = (Button) findViewById(R.id.equal);
         dot = (Button) findViewById(R.id.dot);
         bpow = (Button) findViewById(R.id.pow);
+        String powerDisplay =  "x<sup>2</sup>";
+        bpow.setText(Html.fromHtml(powerDisplay,0));
         bsqr = (Button) findViewById(R.id.sqr);
+        String sqrDisplay = "<span>&#8730;</span>x";
+        bsqr.setText(Html.fromHtml(sqrDisplay,0));
         blog = (Button) findViewById(R.id.log);
 
     }
@@ -382,7 +387,7 @@ public class MainActivity extends AppCompatActivity {
         beq.setEnabled(false);
 
     }
-    
+
     void enableButtons(){
         b0.setEnabled(true);
         b1.setEnabled(true);
