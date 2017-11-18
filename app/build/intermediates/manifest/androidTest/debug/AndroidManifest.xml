@@ -3,7 +3,7 @@
     package="com.example.pawpepe.calculator.test" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="15"
         android:targetSdkVersion="26" />
 
     <instrumentation

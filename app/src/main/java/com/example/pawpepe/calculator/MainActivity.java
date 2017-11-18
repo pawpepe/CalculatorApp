@@ -1,5 +1,6 @@
 package com.example.pawpepe.calculator;
 
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     String numberIn ="";
     String aux="";
     double number, auxNum, result;
-    int i;
+    int i, len ;
 
 
 
@@ -60,11 +61,20 @@ public class MainActivity extends AppCompatActivity {
         beq = (Button) findViewById(R.id.equal);
         dot = (Button) findViewById(R.id.dot);
         bpow = (Button) findViewById(R.id.pow);
-        String powerDisplay =  "x<sup>2</sup>";
-        bpow.setText(Html.fromHtml(powerDisplay,0));
         bsqr = (Button) findViewById(R.id.sqr);
+
+        String powerDisplay =  "x<sup>2</sup>";
         String sqrDisplay = "<span>&#8730;</span>x";
-        bsqr.setText(Html.fromHtml(sqrDisplay,0));
+        if(Build.VERSION.SDK_INT >= 24){
+            bpow.setText(Html.fromHtml(powerDisplay,0));
+            bsqr.setText(Html.fromHtml(sqrDisplay,0));
+        }else{
+
+            bpow.setText(Html.fromHtml(powerDisplay));
+            bsqr.setText(Html.fromHtml(sqrDisplay));
+        }
+
+
         blog = (Button) findViewById(R.id.log);
 
     }
@@ -202,9 +212,10 @@ public class MainActivity extends AppCompatActivity {
         bminus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                flag = 0;
+                acountForDuplicateOperators();
                 display+=bminus.getText().toString();
                 disp.setText(display);
-                addStack();
                 enableButtons();
                 sign = -1;
             }
@@ -214,10 +225,11 @@ public class MainActivity extends AppCompatActivity {
         bplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                flag=0;
+                acountForDuplicateOperators();
+                enableButtons();
                 display+=bplus.getText().toString();
                 disp.setText(display);
-                addStack();
-                enableButtons();
                 sign = 1;
             }
         });
@@ -226,9 +238,9 @@ public class MainActivity extends AppCompatActivity {
         bdiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                acountForDuplicateOperators();
                 display+=bdiv.getText().toString();
                 disp.setText(display);
-                addStack();
                 enableButtons();
                 flag = 2;
             }
@@ -238,9 +250,9 @@ public class MainActivity extends AppCompatActivity {
         bmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                acountForDuplicateOperators();
                 display+=bmul.getText().toString();
                 disp.setText(display);
-                addStack();
                 enableButtons();
                 flag = 1;
             }
@@ -356,15 +368,32 @@ public class MainActivity extends AppCompatActivity {
         st.push(number);
         numberIn = " ";
         //tryin
-        number = 0;
+        //number = 0;
+    }
+
+    void acountForDuplicateOperators(){
+        if(checkForSimpleOperator(display)){
+            len = display.length();
+            display = display.substring(0, len-1);
+        }else{
+            addStack();
+        }
     }
 
     //For the operand buttons check if the last char of the "display" is an operand or a number
-    Boolean checkLastChar(String s){
+    Boolean checkForSimpleOperator(String s){
+        int len = s.length();
 
-        return true;
+        if(len == 0){
+            return false;
+        }
+        Character c = s.charAt(len-1);
 
-       // return false;
+        if (c == '+' || c =='-' || c =='/'||c=='*'){
+            return true;
+        }
+
+        return false;
     }
 
 
